@@ -99,7 +99,7 @@ class Header extends Component {
         </div>
         <div className='container'>
           <Row className='content'>
-            <Col><img className='picture' src='../me.png' alt="Me"/></Col>
+            <Col><img className='picture' src='../img/me.png' alt="Me"/></Col>
           </Row>
           <Row>
             <Col>

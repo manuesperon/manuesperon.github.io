@@ -10,30 +10,30 @@ class Skills extends Component {
       <Container>
         <Row>
           <div className="skill-item">
-            <img src='../html5.svg' alt="HTML5"/>
+            <img src='../img/html5.svg' alt="HTML5"/>
           </div>
           <div className="skill-item">
-            <img src='../css3.svg' alt="CSS3"/>
+            <img src='../img/css3.svg' alt="CSS3"/>
           </div>
           <div className="skill-item">
-            <img src='../react.svg' alt="ReactJS"/>
+            <img src='../img/react.svg' alt="ReactJS"/>
           </div>
           <div className="skill-item">
-            <img src='../jquery.svg' alt="JQuery"/>
+            <img src='../img/jquery.svg' alt="JQuery"/>
           </div>
         </Row>
         <Row>
           <div className="skill-item">
-            <img src='../php.svg' alt="PHP"/>
+            <img src='../img/php.svg' alt="PHP"/>
           </div>
           <div className="skill-item">
-            <img src='../mysql.svg' alt="MySQL"/>
+            <img src='../img/mysql.svg' alt="MySQL"/>
           </div>
           <div className="skill-item">
-            <img src='../node.svg' alt="NodeJS"/>
+            <img src='../img/node.svg' alt="NodeJS"/>
           </div>
           <div className="skill-item">
-            <img src='../mongodb.svg' alt="MongoDB"/>
+            <img src='../img/mongodb.svg' alt="MongoDB"/>
           </div>
         </Row>
       </Container>
