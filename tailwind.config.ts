@@ -6,6 +6,13 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  theme: {
+    extend: {
+      colors: {
+        aquaGreen: '#00EBA6',
+      },
+    },
+  },
   plugins: [],
 };
 export default config;
