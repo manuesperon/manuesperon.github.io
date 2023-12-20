@@ -1,27 +1,30 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import GithubIcon from '@components/icons/GithubIcon';
 import LinkedInIcon from '@components/icons/LinkedInIcon';
 import MailIcon from '@components/icons/MailIcon';
+import Button from '@components/Button';
 
 const Home = () => {
   const iconStyles = 'fill-white hover:fill-aquaGreen transition-colors duration-300';
 
   return (
-    <div className="flex flex-col items-center gap-8 p-8 text-center">
-      <Image className="rounded-full" src="/images/memoji.jpeg" alt="Photo placeholder" width={300} height={300} />
+    <div className="flex flex-col items-center gap-8 text-center">
+      <Image className="rounded-full" src="/images/memoji.jpeg" alt="Me" width={300} height={300} />
       <div>
         <h1>Manuel Esperon</h1>
         <h6 className="mt-2 text-right text-aquaGreen">Web engineer</h6>
       </div>
-      <div className="max-w-3xl text-xl">
+      <p className="max-w-3xl text-xl">
         Hey there! 👋 I&apos;m a full stack engineer with over 6 years of experience building websites and web
         applications. Let&apos;s work together!
-      </div>
-      {/* TODO: Add once about page has been implemented
+      </p>
       <Link href="/about">
         <Button>Get to know more about me!</Button>
-      </Link> */}
+      </Link>
+      <Image id="contact" src="images/mecard_qr.png" alt="Contact QR code" width={200} height={200} />
+      <p>Scan this QR code to get my contact details on your smartphone</p>
       <div className="flex gap-4">
         <a href="https://github.com/manuesperon/manuesperon.github.io" target="_blank" title="Github">
           <GithubIcon width={40} height={40} className={iconStyles} />
