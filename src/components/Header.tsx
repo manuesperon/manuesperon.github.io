@@ -12,10 +12,10 @@ const Header = () => {
       title: 'About',
       url: '/about',
     },
-    {
-      title: 'Blog',
-      url: '/blog',
-    },
+    // {
+    //   title: 'Blog',
+    //   url: '/blog',
+    // },
   ];
 
   const pathname = usePathname();
