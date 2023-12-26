@@ -11,7 +11,7 @@ const Home = () => {
 
   return (
     <div className="flex flex-col items-center gap-8 text-center">
-      <Image className="rounded-full" src="/images/memoji.jpeg" alt="Me" width={300} height={300} />
+      <Image className="rounded-full" src="/images/me.png" alt="Me" width={300} height={300} />
       <div>
         <h1>Manuel Esperon</h1>
         <h6 className="mt-2 text-right text-aquaGreen">Web engineer</h6>
