@@ -31,6 +31,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Create env file
+        run: |
+          touch .env
+          echo NEXT_PUBLIC_GOOGLE_ID=${{ vars.NEXT_PUBLIC_GOOGLE_ID }} >> .env
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -76,8 +80,6 @@ jobs:
       - name: Build with Next.js
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} next build
-        env:
-          NEXT_PUBLIC_GOOGLE_ID: ${{vars.NEXT_PUBLIC_GOOGLE_ID}}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
@@ -89,8 +91,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    env:
-      NEXT_PUBLIC_GOOGLE_ID: ${{vars.NEXT_PUBLIC_GOOGLE_ID}}
     needs: build
     steps:
       - name: Deploy to GitHub Pages
