@@ -11,10 +11,12 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ID;
+  const isProd = process.env.NODE_ENV === 'production';
+
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col ">
-        {GA_TRACKING_ID && <GoogleAnalytics gaID={GA_TRACKING_ID} />}
+        {isProd && GA_TRACKING_ID && <GoogleAnalytics gaID={GA_TRACKING_ID} />}
         <Header />
         <main className="mx-auto mt-6 md:p-8 p-4">{children}</main>
         <Footer />
