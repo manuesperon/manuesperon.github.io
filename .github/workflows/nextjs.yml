@@ -77,7 +77,7 @@ jobs:
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} next build
         env:
-          NEXT_PUBLIC_GOOGLE_ID: ${{secrets.NEXT_PUBLIC_GOOGLE_ID}}
+          NEXT_PUBLIC_GOOGLE_ID: ${{vars.NEXT_PUBLIC_GOOGLE_ID}}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
@@ -90,7 +90,7 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_GOOGLE_ID: ${{secrets.NEXT_PUBLIC_GOOGLE_ID}}
+      NEXT_PUBLIC_GOOGLE_ID: ${{vars.NEXT_PUBLIC_GOOGLE_ID}}
     needs: build
     steps:
       - name: Deploy to GitHub Pages
