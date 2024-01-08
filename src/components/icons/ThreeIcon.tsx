@@ -16,10 +16,10 @@ const ThreeIcon = ({ width, height, className }: IconProps) => {
       <g
         transform="translate(8.964 4.2527)"
         fill-rule="evenodd"
-        stroke="#000"
         stroke-linecap="butt"
         stroke-linejoin="round"
         stroke-width="4"
+        className="dark:stroke-black stroke-white"
       >
         <path d="m63.02 200.61-43.213-174.94 173.23 49.874z" />
         <path d="m106.39 50.612 21.591 87.496-86.567-24.945z" />

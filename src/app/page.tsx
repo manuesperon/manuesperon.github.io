@@ -7,7 +7,7 @@ import MailIcon from '@components/icons/MailIcon';
 import Button from '@components/Button';
 
 const Home = () => {
-  const iconStyles = 'fill-white hover:fill-aquaGreen transition-colors duration-300';
+  const iconStyles = 'fill-black dark:fill-white hover:fill-aquaGreen transition-colors duration-300';
 
   return (
     <div className="flex flex-col items-center gap-8 text-center">

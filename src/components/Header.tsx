@@ -20,10 +20,10 @@ const Header = () => {
 
   const pathname = usePathname();
 
-  const activeLinkStyles = 'bg-black text-white';
+  const activeLinkStyles = 'dark:bg-black bg-white dark:text-white text-black';
 
   return (
-    <div className="w-fit mt-4 mx-auto rounded-3xl flex gap-x-1 justify-center bg-white text-black">
+    <div className="w-fit mt-4 mx-auto rounded-3xl flex gap-x-1 justify-center dark:bg-white bg-black dark:text-black text-white">
       {headerItems.map((item, i) => (
         <Link
           key={i}

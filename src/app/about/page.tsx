@@ -13,8 +13,7 @@ const TechnologiesContainer = ({ children }: { children: React.ReactNode }) => {
 
 const AboutPage = () => {
   const paragraphStyles = 'lg:text-xl text-md  my-8 text-center';
-  const iconStyles =
-    'lg:w-[80px] lg:h-[80px] md:w-[50px] md:h-[50px] w-[35px] h-[35px] fill-white hover:fill-aquaGreen hover:text-aquaGreen transition-colors duration-300';
+  const iconStyles = 'lg:w-[80px] lg:h-[80px] md:w-[50px] md:h-[50px] w-[35px] h-[35px] dark:fill-white fill-black';
 
   return (
     <div className="max-w-4xl flex flex-col items-center justify-around">
@@ -41,7 +40,7 @@ const AboutPage = () => {
       </TechnologiesContainer>
       <p className={paragraphStyles}>...and these are the ones I&apos;m currently experimenting with!</p>
       <TechnologiesContainer>
-        <ThreeIcon className={iconStyles} />
+        <ThreeIcon className={iconStyles} strokeColor="red" />
         <BlenderIcon className={`${iconStyles}`} />
       </TechnologiesContainer>
     </div>
