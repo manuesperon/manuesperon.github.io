@@ -40,7 +40,7 @@ const AboutPage = () => {
       </TechnologiesContainer>
       <p className={paragraphStyles}>...and these are the ones I&apos;m currently experimenting with!</p>
       <TechnologiesContainer>
-        <ThreeIcon className={iconStyles} strokeColor="red" />
+        <ThreeIcon className={iconStyles} />
         <BlenderIcon className={`${iconStyles}`} />
       </TechnologiesContainer>
     </div>
