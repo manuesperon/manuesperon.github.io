@@ -3,6 +3,7 @@ import GraphQLIcon from '@components/icons/GraphQLIcon';
 import NextIcon from '@components/icons/NextIcon';
 import NodeIcon from '@components/icons/NodeIcon';
 import ReactIcon from '@components/icons/ReactIcon';
+import ShadcnIcon from '@components/icons/ShadcnIcon';
 import ThreeIcon from '@components/icons/ThreeIcon';
 import TypescriptIcon from '@components/icons/TypescriptIcon';
 import Link from 'next/link';
@@ -41,7 +42,7 @@ const AboutPage = () => {
       <p className={paragraphStyles}>...and these are the ones I&apos;m currently experimenting with!</p>
       <TechnologiesContainer>
         <ThreeIcon className={iconStyles} />
-        <BlenderIcon className={`${iconStyles}`} />
+        <ShadcnIcon className={`${iconStyles}`} />
       </TechnologiesContainer>
     </div>
   );
