@@ -12,6 +12,17 @@ const TechnologiesContainer = ({ children }: { children: React.ReactNode }) => {
   return <div className="flex items-center sm:gap-6 gap-3 border-2 border-aquaGreen rounded-full p-4">{children}</div>;
 };
 
+const IconWithTooltip = ({ icon, title }: { icon: React.ReactNode; title: string }) => {
+  return (
+    <div className="relative group">
+      {icon}
+      <span className="absolute top-1/2 right-0 -translate-y-1/2 bg-aquaGreen text-black px-2 py-1 rounded-full text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        {title}
+      </span>
+    </div>
+  );
+};
+
 const AboutPage = () => {
   const paragraphStyles = 'lg:text-xl text-md  my-8 text-center';
   const iconStyles = 'lg:w-[80px] lg:h-[80px] md:w-[50px] md:h-[50px] w-[35px] h-[35px] dark:fill-white fill-black';
@@ -41,8 +52,8 @@ const AboutPage = () => {
       </TechnologiesContainer>
       <p className={paragraphStyles}>...and these are the ones I&apos;m currently experimenting with!</p>
       <TechnologiesContainer>
-        <ThreeIcon className={iconStyles} />
-        <ShadcnIcon className={`${iconStyles}`} />
+        <IconWithTooltip icon={<ThreeIcon className={iconStyles} />} title="Three.js" />
+        <IconWithTooltip icon={<ShadcnIcon className={`${iconStyles}`} />} title="Shadcn" />
       </TechnologiesContainer>
     </div>
   );
