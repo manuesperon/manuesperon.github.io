@@ -17,8 +17,8 @@ const Home = () => {
         <h6 className="mt-2 text-right text-aquaGreen">Web engineer</h6>
       </div>
       <p className="max-w-3xl text-xl">
-        Hey there! 👋 I&apos;m a full stack engineer with over 6 years of experience building websites and web
-        applications. Let&apos;s work together!
+        Hey there! 👋 I&apos;m a full stack software engineer with over 9 years of experience building and maintaining
+        web applications. Let&apos;s work together!
       </p>
       <Link href="/about">
         <Button>Get to know more about me!</Button>
