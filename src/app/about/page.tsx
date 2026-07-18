@@ -3,12 +3,24 @@ import GraphQLIcon from '@components/icons/GraphQLIcon';
 import NextIcon from '@components/icons/NextIcon';
 import NodeIcon from '@components/icons/NodeIcon';
 import ReactIcon from '@components/icons/ReactIcon';
+import ShadcnIcon from '@components/icons/ShadcnIcon';
 import ThreeIcon from '@components/icons/ThreeIcon';
 import TypescriptIcon from '@components/icons/TypescriptIcon';
 import Link from 'next/link';
 
 const TechnologiesContainer = ({ children }: { children: React.ReactNode }) => {
   return <div className="flex items-center sm:gap-6 gap-3 border-2 border-aquaGreen rounded-full p-4">{children}</div>;
+};
+
+const IconWithTooltip = ({ icon, title }: { icon: React.ReactNode; title: string }) => {
+  return (
+    <div className="relative group">
+      {icon}
+      <span className="absolute top-1/2 right-0 -translate-y-1/2 bg-aquaGreen text-black px-2 py-1 rounded-full text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        {title}
+      </span>
+    </div>
+  );
 };
 
 const AboutPage = () => {
@@ -40,8 +52,8 @@ const AboutPage = () => {
       </TechnologiesContainer>
       <p className={paragraphStyles}>...and these are the ones I&apos;m currently experimenting with!</p>
       <TechnologiesContainer>
-        <ThreeIcon className={iconStyles} />
-        <BlenderIcon className={`${iconStyles}`} />
+        <IconWithTooltip icon={<ThreeIcon className={iconStyles} />} title="Three.js" />
+        <IconWithTooltip icon={<ShadcnIcon className={`${iconStyles}`} />} title="Shadcn" />
       </TechnologiesContainer>
     </div>
   );
